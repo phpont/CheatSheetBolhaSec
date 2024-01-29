@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackers Do Bem</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body,
+        h2,
+        p {
+            font-family: 'Fira Code', monospace;
+        }
+
+        .command-card {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+            border-left: 5px solid green;
+        }
+
+        .command-card.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .command-card:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-left-color: darkgreen;
+        }
+
+        header,
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: green;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-black text-green-500">
+    <header class="text-center p-4">
+        <h1 class="text-3xl font-bold">Hackers Do Bem</h1>
+    </header>
+    <section id="objetivo-webpage" class="bg-gray-800 text-white p-6">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold mb-4">Bem-vindo à Cheatsheet Hackers do Bem</h2>
+            <p class="text-lg">
+                Navegar pelo mundo do hacking pode ser uma jornada complexa e desafiadora, especialmente para quem
+                está começando. Pensando nisso, criamos esta cheatsheet como uma bússola confiável para guiar sua
+                aprendizagem. Aqui, você encontrará comandos essenciais, técnicas fundamentais, e dicas práticas que são
+                pedras angulares no campo do hacking ético.
+            </p>
+            <p class="mt-4">
+                Seja você um estudante buscando aprimorar suas habilidades, um entusiasta querendo explorar novos
+                horizontes, ou um profissional procurando um recurso rápido para consultas diárias, nosso objetivo é
+                fornecer um conteúdo claro, direto e de fácil acesso. Utilize esta página como seu guia de referência
+                rápida.
+            </p>
+        </div>
+    </section>
+
+    <main class="container mx-auto p-4">
+        <section id="comandos">
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando ls</h2>
+                <p>Lista todos os arquivos e diretórios.</p>
+            </div>
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando cd</h2>
+                <p>Muda o diretório atual.</p>
+            </div>
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando pwd</h2>
+                <p>Exibe o caminho completo do diretório atual.</p>
+            </div>
+
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando mkdir</h2>
+                <p>Cria um novo diretório.</p>
+            </div>
+
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando rm</h2>
+                <p>Remove arquivos ou diretórios.</p>
+            </div>
+
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando cp</h2>
+                <p>Copia arquivos e diretórios.</p>
+            </div>
+
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando mv</h2>
+                <p>Move ou renomeia arquivos e diretórios.</p>
+            </div>
+
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando cat</h2>
+                <p>Exibe o conteúdo de um arquivo ou os concatena.</p>
+            </div>
+
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando chmod</h2>
+                <p>Altera as permissões de arquivo ou diretório.</p>
+            </div>
+
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando man</h2>
+                <p>Exibe o manual de um comando.</p>
+            </div>
+            <!-- Comando touch -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando touch</h2>
+                <p>Cria um novo arquivo vazio ou atualiza a data de modificação de um arquivo existente.</p>
+            </div>
+
+            <!-- Comando grep -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando grep</h2>
+                <p>Procura por padrões em arquivos ou entrada de dados. Muito útil para filtrar informações.</p>
+            </div>
+
+            <!-- Comando find -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando find</h2>
+                <p>Busca arquivos e diretórios com base em critérios de pesquisa específicos.</p>
+            </div>
+
+            <!-- Comando tail -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando tail</h2>
+                <p>Exibe as últimas linhas de um arquivo. Comum para monitoramento de logs.</p>
+            </div>
+
+            <!-- Comando head -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando head</h2>
+                <p>Exibe as primeiras linhas de um arquivo.</p>
+            </div>
+
+            <!-- Comando df -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando df</h2>
+                <p>Mostra informações sobre o uso do espaço em disco dos sistemas de arquivos montados.</p>
+            </div>
+
+            <!-- Comando top -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando top</h2>
+                <p>Exibe informações em tempo real sobre processos em execução e uso de recursos do sistema.</p>
+            </div>
+
+            <!-- Comando ps -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando ps</h2>
+                <p>Exibe informações sobre processos ativos. Pode ser combinado com grep para filtrar processos.</p>
+            </div>
+
+            <!-- Comando kill -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando kill</h2>
+                <p>Envia sinais a processos. Geralmente usado para terminar processos.</p>
+            </div>
+
+            <!-- Comando sudo -->
+            <div class="command-card hover:shadow-lg transition duration-300 ease-in-out p-4 m-4">
+                <h2 class="text-xl font-semibold">Comando sudo</h2>
+                <p>Permite executar comandos com privilégios de segurança elevados, geralmente como o superusuário.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="text-center p-4">
+        © 2024 Comandos Linux
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
